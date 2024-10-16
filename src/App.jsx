@@ -1,11 +1,19 @@
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
 
-function App() {
+export default function App() {
   return (
     <>
       <Navbar />
+      <Hero />
+      <Portfolio />
+      <Contact />
+      <About />
+      <Footer />
     </>
   );
 }
-
-export default App;
