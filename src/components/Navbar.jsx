@@ -16,10 +16,10 @@ const Navbar = () => {
       <h1 className="text-3xl font-bold  ml-4">Phelipe Silvestre</h1>
       <ul className="hidden md:flex z-50">
         <li className="p-5">
-          <a href="#about">About</a>
+          <a href="#about">Sobre</a>
         </li>
         <li className="p-5">
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">Portfólio</a>
         </li>
         <li className="p-5">
           <a
@@ -27,7 +27,7 @@ const Navbar = () => {
             className="font-bold px-4 py-2 
                 rounded-xl bg-primary-color"
           >
-            Contact
+            Contato
           </a>
         </li>
       </ul>
