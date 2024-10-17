@@ -13,6 +13,14 @@ import {
 } from "react-icons/di";
 import ShinyEffect from "./ShinyEffect";
 
+const socialMedia = [
+  {
+    title: "LinkedIn",
+    description: "LinkedIn profile",
+    links: "https://www.linkedin.com/in/phelipe-silvestre-636683125/",
+  },
+];
+
 const Hero = () => {
   return (
     <div
@@ -30,14 +38,18 @@ const Hero = () => {
 
         <div className="my-auto ml-8  flex-col">
           <p className="text-2xl md:text-4xl font-bold text-gray-200">
-            Hi! I am <br /> John Doe <br />
+            Olá, eu sou o <br /> Phelipe Silvestre <br />
             <TypeAnimation
               sequence={[
                 "Frontend Dev",
                 1000,
                 "Webdesigner",
                 1000,
-                "Consultant",
+                "Backend Dev",
+                1000,
+                "Fullstack Dev",
+                1000,
+                "Freelancer Dev",
                 1000,
               ]}
               wrapper="span"
@@ -46,7 +58,7 @@ const Hero = () => {
             />
           </p>
           <p className="text-xl md:text-3xl font-bold text-gray-500">
-            with a 5+ years experience
+            com 3 anos de experiência
           </p>
           <button
             href="/"
@@ -77,9 +89,50 @@ const Hero = () => {
 
         <div className="flex justify-center items-center flex-col glass">
           <div className="text-7xl flex justify-start gap-4">
-            <AiFillLinkedin className="text-gray-600" />
-            <AiFillGithub className="text-gray-600" />
-            <AiFillInstagram className="text-gray-600" />
+            {/* LinkedIn */}
+            <a
+              href={socialMedia.links}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+              style={{
+                fontSize: "48px",
+                display: "inline-block",
+                padding: "10px",
+              }}
+            >
+              <AiFillLinkedin />
+            </a>
+
+            {/* GitHub */}
+            <a
+              href="https://github.com/seu-github"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-black transition-colors duration-300"
+              style={{
+                fontSize: "48px",
+                display: "inline-block",
+                padding: "10px",
+              }}
+            >
+              <AiFillGithub />
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://instagram.com/seu-instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-pink-600 transition-colors duration-300"
+              style={{
+                fontSize: "48px",
+                display: "inline-block",
+                padding: "10px",
+              }}
+            >
+              <AiFillInstagram />
+            </a>
           </div>
         </div>
 

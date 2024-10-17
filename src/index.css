@@ -12,19 +12,28 @@ span,
 .primary-color {
   background-image: linear-gradient(to right, #7a0d8a, #c92085, #c68109);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
 .bg-primary-color {
-  @apply bg-gradient-to-r from-[#7a0d8a] via-[#c92085] to-[#c68109];
+  background: linear-gradient(to right, #7a0d8a, #c92085, #c68109);
 }
 
 h2 {
-  @apply text-xl md:text-4xl;
+  font-size: 1.25rem; /* text-xl */
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem; /* md:text-4xl */
+  }
 }
 
 p {
-  @apply text-xl tracking-tight leading-relaxed;
+  font-size: 1.25rem; /* text-xl */
+  letter-spacing: -0.015em; /* tracking-tight */
+  line-height: 1.625; /* leading-relaxed */
 }
 
 .glass {
